@@ -4,3 +4,18 @@
 
 /* Mettre ici les styles "globaux" */
 
+@layer base {
+
+    span {
+      @apply text-red-600 ;
+    }
+
+  }
+
+  @layer base {
+
+    .paddingtext {
+      @apply md:text-4xl;
+       
+    }
+  }

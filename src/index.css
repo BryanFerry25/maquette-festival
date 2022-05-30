@@ -14,8 +14,13 @@
 
   @layer base {
 
-    .paddingtext {
-      @apply md:text-4xl;
+    .textresponsive {
+      @apply sm:text-base md:text-lg lg:text-xl xl:text-2xl ;
+
+    
        
+    }
+    .textpadding{
+        @apply pr-7 pl-7 md:pr-20 md:pl-20 lg:pl-36 lg:pr-36 xl:pr-48 xl:pl-48
     }
   }

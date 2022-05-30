@@ -6,7 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
- 
+      "colors": {
+        "fond-gris": "#1C1917",
+      },
       "fontSize": {
         "3xs": "0.75rem",
         "2xs": "0.875rem",

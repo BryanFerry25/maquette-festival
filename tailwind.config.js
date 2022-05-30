@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       "colors": {
         "fond-gris": "#1C1917",
+        "legende": "#A3A3A3"
       },
       "fontSize": {
         "3xs": "0.75rem",

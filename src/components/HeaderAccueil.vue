@@ -3,7 +3,7 @@
 
 
 
- <div class=" flex justify-end items-center pr-3 pt-5 ">
+ <div class=" flex justify-end items-center pr-3 pt-5 pb-6 ">
     <div class=" flex font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl gap-3 lg:p-5 xl:text-5xl xl:pr-10  ">
 
         <p>Artistes</p>
@@ -22,6 +22,10 @@
     </div>
 </div>
 
+
+<div>
+    <img src="../../public/images/vague.webp" alt=" vague"  class=" w-screen max-h-16">
+</div>
 </template>
 
 <script>

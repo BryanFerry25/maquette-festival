@@ -1,9 +1,9 @@
 <template>
     <div class="flex flex-col justify-center items-center relative">
   <svg
-  class="md:w-[75px] lg:w-[85px] xl:w-[105px] md:h-[59px] lg:h-[69px] xl:h-[89px] flex-grow-0 flex-shrink-0"
+  class="md:w-[75px] lg:w-[85px] xl:w-[105px] md:h-[55px] lg:h-[65px] xl:h-[85px] flex-grow-0 flex-shrink-0"
     width="55"
-    height="39"
+    height="35"
     viewBox="0 0 55 39"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -51,10 +51,10 @@
       </filter>
     </defs></svg
   ><svg
-    class="md:w-[75px] lg:w-[85px] xl:w-[105px] md:h-[59px] lg:h-[69px] xl:h-[89px] flex-grow-0 flex-shrink-0"
+    class="md:w-[75px] lg:w-[85px] xl:w-[105px] md:h-[55px] lg:h-[65px] xl:h-[85px] flex-grow-0 flex-shrink-0 -mt-2 "
 
     width="55"
-    height="39"
+    height="35"
     viewBox="0 0 55 39"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

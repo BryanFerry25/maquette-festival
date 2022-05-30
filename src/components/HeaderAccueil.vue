@@ -7,16 +7,16 @@
     <div class=" flex font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl gap-3 xl:gap-4 lg:p-5 xl:text-5xl xl:pr-10  ">
 
 
- <a class="flex font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl gap-3 xl:gap-4 lg:p-5 xl:text-5xl  " href="">
+ <a class="flex font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl gap-3 xl:gap-4 lg:p-5 xl:text-5xl lg:-mr-5 " href="">
         <p>Artistes</p>
 
         <div class=" pt-1">
         <LogoArtiste class="md:w-5 md:h-4 lg:w-7 lg:h-6 "/>
         </div>
 </a>
-        <p class="font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl gap-3 xl:gap-4 lg:p-5 xl:text-5xl "> |</p>
+        <p class="font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl xl:gap-3 lg:p-5 xl:text-5xl lg:-mr-5  "> |</p>
 
-<a class="flex font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl gap-3 xl:gap-4 lg:p-5 xl:text-5xl  "  href="">
+<a class="flex font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl gap-3 xl:gap-3 lg:p-5 xl:text-5xl  "  href="">
         <p>Programmation</p>
 
         <div class=" pt-1 ">
@@ -28,7 +28,7 @@
   <p class="font-plus-jakarta-sans hidden xl:flex lg:flex xl:mt-5 lg:mt-5 "> |</p>
 <a class="font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl xl:gap-4 lg:gap-4 lg:p-5 xl:text-5xl xl:pr-10 hidden xl:flex lg:flex" href="">
 
-        <p class="hidden xl:flex lg:flex lg:text-2xl">Le festival</p>
+        <p class="hidden xl:flex lg:flex lg:text-2xl xl:text-5xl">Le festival</p>
 
         <div class=" pt-1 hidden xl:flex lg:flex ">
         <IconFestival class=" xl:w-6 xl:h-6 lg:w-6 lg:h-6"/>

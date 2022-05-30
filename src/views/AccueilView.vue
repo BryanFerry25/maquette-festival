@@ -21,9 +21,11 @@ textebouton="Découvrir"/>
 </div>
 <section class=" bg-fond-gris -mt-3 ">
 
+<div class=" pt-10 ">
+  <img class="w-full max-h-auto" src="../../public/images/festival_accueil.webp" alt=" photo festival">
+</div>
 
-
-
+<FlecheDown/>
 
 </section>
 
@@ -36,12 +38,13 @@ textebouton="Découvrir"/>
 import { RouterLink, RouterView } from "vue-router";
 import Header from "../components/HeaderAccueil.vue"
 import Bouton from "../components/Bouton.vue"
+import FlecheDown from "../components/icons/FlecheDown.vue"
 
 
 
 export default {
  
-  components: {Header, Bouton }
+  components: {Header, Bouton, FlecheDown }
   
 
 };

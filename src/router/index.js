@@ -9,7 +9,7 @@ import Contact from '../views/Contact.vue'
 import Concert from '../views/Concert.vue'
 import Artistes from '../views/Artistes.vue'
 import ArtistePage from '../views/ArtistePage.vue'
-import ArtistePage from '../views/ArtistePage.vue'
+
 
 
 

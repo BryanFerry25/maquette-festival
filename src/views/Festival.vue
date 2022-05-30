@@ -1,5 +1,5 @@
 <template>
-    <p>programmation</p>
+    <p>Festival</p>
 </template>
 
 <script>

@@ -1,7 +1,7 @@
 <template>
     
-<a :href="lien">
-<div class="flex flex-row justify-center  drop-shadow-2xl mt-7 ">
+<RouterLink :to="lien">
+<div class="flex flex-row justify-center  drop-shadow-2xl  mt-7 ">
 <svg
  class=" lg:w-[500px] lg:h-[80px] md:w-[450px] md:h-[75px] hover:fill-red-800"
   width="250"
@@ -17,8 +17,8 @@
 </svg>
   <p class=" text-2xl flex-grow-0 flex-shrink-0 font-plus-jakarta-sans font-semibold text-left drop-shadow-sm absolute text-white mt-3.5 md:mt-4 md:text-4xl lg:mt-5 lg:text-6xl  ">{{textebouton}}</p>
 </div>
+</RouterLink>
 
-</a>
 </template>
 
 <script>
@@ -27,6 +27,10 @@ export default {
          textebouton: {type: String,
        
         },
+      lien:{
+      type: String,
+      default:"/"
+    },
 
 },
 }

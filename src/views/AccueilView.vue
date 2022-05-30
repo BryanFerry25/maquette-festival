@@ -12,10 +12,11 @@
 <div class="flex items-center lg:gap-28 md:gap-14 sm:gap-7 xl:gap-60  ">
   <img class=" w-full h-full xl:max-w-[400px] xl:max-h[400px] mr-auto" src="../../public/images/bouton_accueil2.webp" alt=" dj">
 
-  <div class="-mb-10 ml-auto mr-auto">
-<Bouton
-textebouton="Découvrir"
-/>
+  <div class="-mb-10 ml-auto mr-auto ">
+  <Bouton
+  textebouton="Découvrir"
+  
+  />
 </div>
 
 <img class="w-full h-full  xl:max-w-[400px] xl:max-h[400px] ml-auto  " src="../../public/images/bouton_accueil1.webp" alt=" dj">
@@ -28,28 +29,57 @@ textebouton="Découvrir"
 
 <FlecheDown/>
 
-<h2 class=" font-poppins font-semibold text-white text-center mt-7 text-10xl md:text-11xl lg:text-14xl xl:text-16xl textpadding mb-7 ">Découvrez tous nos concerts !</h2>
+<PresentationAccueil
+image="../../public/images/affiche_accueil1.webp"
+TitrePartie="Découvrez tous nos concerts !"
+DescriptionPartie="Retrouvez la liste de tous nos concerts disponible cette année et plongez au coeur de celui qui vous correspond le mieux !"
+TextePartie1="Plus de 10 concerts"
+TextePartie2="disponibles cet été !"
 
-<p class=" font-plus-jakarta-sans font-normal textresponsive textpadding text-center text-legende mb-14">Retrouvez la liste de tous nos concerts disponible cette année et plongez au coeur de celui qui vous correspond le mieux !</p>
+/>
+<FlecheDown/>
+
+<PresentationAccueil
+image="../../public/images/affiche_accueil2.webp"
+TitrePartie="Rencontrez vos artistes préférés !"
+DescriptionPartie="Retrouvez la liste de tous nos artistes présents lors des concerts et choisissez le meilleur concert pour vous selon cette liste !"
+TextePartie1="Plus de 10 artistes dont "
+TextePartie2="2 renommées meilleures DJ en France"
+
+/>
+
+<FlecheDown/>
+
+<PresentationAccueil
+image="../../public/images/affiche_accueil3.webp"
+TitrePartie="À propos du festival"
+DescriptionPartie="Venez à l’encontre de notre festival et plongez au coeur d’une aventure paliptante et sensationnelle."
+TextePartie1="Plus de 15 000 visiteurs "
+TextePartie2=" à chaque concerts !"
+/>
+
+<FlecheDown/>
 
 <div class="textpadding  ">
-  <img class="w-4/5 md:w-3/5 lg:w-3/5 xl:h-1/5 mx-auto my-auto" src="../../public/images/affiche_accueil1.webp" alt="affiche accueil">
   <div class=" bg-red-900  rounded-xl -mt-5 relative z-10 ">
-    <h3 class=" font-plus-jakarta-sans font-medium text-7xl md:text-9xl lg:text-10xl xl:text-12xl  text-white pt-4 pb-8 text-center ">Plus de 10 concerts <br class="hiiden lg:flex xl:flex"> disponibles cet été !</h3>
+  <img class="w-3/5 md:w-2/5 lg:w-2/5 xl:h-1/5 mx-auto my-auto" src="../../public/images/reseaux.webp" alt="affiche reseaux sociaux">
+  
+   
   </div>
 
 <div class="-mt-10 relative z-20 ">
   <Bouton
-  textebouton="Découvrir"
+  textebouton="Nous contacter"
+  
   />
   </div>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+
+<footer>
+  <Footer/>
+</footer>
+
 
 </section>
 
@@ -63,12 +93,14 @@ import { RouterLink, RouterView } from "vue-router";
 import Header from "../components/HeaderAccueil.vue"
 import Bouton from "../components/Bouton.vue"
 import FlecheDown from "../components/icons/FlecheDown.vue"
+import PresentationAccueil from "../components/PresentationAccueil.vue"
+import Footer from "../components/Footer.vue"
 
 
 
 export default {
  
-  components: {Header, Bouton, FlecheDown }
+  components: {Header, Bouton, FlecheDown, PresentationAccueil, Footer }
   
 
 };

@@ -10,7 +10,7 @@ import AccueilView from '../views/AccueilView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/accueil', name: 'Accueil', component: AccueilView },
+    { path: '/', name: 'Accueil', component: AccueilView },
 
 
 

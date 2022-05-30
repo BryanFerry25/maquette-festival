@@ -7,7 +7,7 @@
     <div class=" flex font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl gap-3 xl:gap-4 lg:p-5 xl:text-5xl xl:pr-10  ">
 
 
- <a class="flex font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl gap-3 xl:gap-4 lg:p-5 xl:text-5xl lg:-mr-5 hover:-translate-y-2 " href="">
+ <a class="flex font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl gap-3 xl:gap-4 lg:p-5 xl:text-5xl lg:-mr-5 hover:-translate-y-2 delay-100 ease-out transition-transform " href="">
         <p>Artistes</p>
 
         <div class=" pt-1">
@@ -16,7 +16,7 @@
 </a>
         <p class="font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl xl:gap-3 lg:p-5 xl:text-5xl lg:-mr-5  "> |</p>
 
-<a class="flex font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl gap-3 xl:gap-3 lg:p-5 xl:text-5xl hover:-translate-y-2  "  href="">
+<a class="flex font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl gap-3 xl:gap-3 lg:p-5 xl:text-5xl hover:-translate-y-2  delay-100 ease-out transition-transform  "  href="">
         <p>Programmation</p>
 
         <div class=" pt-1 ">
@@ -26,7 +26,7 @@
 
 
   <p class="font-plus-jakarta-sans hidden xl:flex lg:flex xl:mt-5 lg:mt-5 "> |</p>
-<a class="font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl xl:gap-4 lg:gap-4 lg:p-5 xl:text-5xl xl:pr-10 hidden xl:flex lg:flex hover:-translate-y-2 " href="">
+<a class="font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl xl:gap-4 lg:gap-4 lg:p-5 xl:text-5xl xl:pr-10 hidden xl:flex lg:flex hover:-translate-y-2  delay-100 ease-out transition-transform " href="">
 
         <p class="hidden xl:flex lg:flex lg:text-2xl xl:text-5xl">Le festival</p>
 
@@ -37,7 +37,7 @@
 
 </a>
 <p class="font-plus-jakarta-sans hidden xl:flex xl:mt-5 "> |</p>
-<a class="font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl xl:gap-4 lg:p-5 xl:text-5xl xl:pr-10 hidden xl:flex hover:-translate-y-2" href="">
+<a class="font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl xl:gap-4 lg:p-5 xl:text-5xl xl:pr-10 hidden xl:flex hover:-translate-y-2  delay-100 ease-out transition-transform" href="">
 
         <p class="hidden xl:flex">Nous contacter</p>
 

@@ -28,7 +28,9 @@
     </RouterLink>
 
 </div>
-
+<div class="pt-7">
+    <img src="../../public/images/vague.webp" alt=" vague"  class=" w-screen max-h-16">
+</div>
 
 </template>
 

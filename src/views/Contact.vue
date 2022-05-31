@@ -94,8 +94,22 @@ Titre="Contact"/>
 
 
 <h2 class=" font-poppins font-semibold text-white text-center mt-7 text-10xl md:text-11xl lg:text-14xl xl:text-16xl textpadding mb-7 ">Où nous trouver ?</h2>
- <p class="  font-plus-jakarta-sans  font-semibold text-center textresponsive textpadding text-white ">Rendez-vous dans la zone verte, rue Claude Monet à Lyon, 69150 </p>
+ <p class="  font-plus-jakarta-sans  font-semibold text-center textresponsive textpadding text-white mb-16 ">Rendez-vous dans la zone verte, rue Claude Monet à Lyon, 69150 </p>
 
+
+<div class=" sm:scale-75 md:scale-100 lg:scale-150 xl:scale-150 mx-auto my-auto flex justify-center">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.8928769041995!2d4.792258915793224!3d45.73324307910508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ebe461ea1b09%3A0x58437f29832f1ae8!2sRue%20Claude%20Monet%2C%2069110%20Sainte-Foy-l%C3%A8s-Lyon!5e0!3m2!1sfr!2sfr!4v1654023730221!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+
+<div class=" flex justify-center">
+
+<div>
+  <img src="" alt="">
+</div>
+
+
+</div>
 
 </div>
 
@@ -103,7 +117,7 @@ Titre="Contact"/>
 
 
 </main>
-    <p>Contact</p>
+ 
 
 
 

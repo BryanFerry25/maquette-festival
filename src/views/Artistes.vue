@@ -40,7 +40,8 @@ etoile3="#FBBF24"
 etoile4="#FFFFFF"
 etoile5="#FFFFFF"
 ImageArtiste="/images/artiste1.webp"
-textebouton="Tony Flapper"/>
+textebouton="Tony Flapper"
+lien="/ArtistePage"/>
 </div>
 
 

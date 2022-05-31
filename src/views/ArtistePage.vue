@@ -197,6 +197,30 @@ Titre="Tony Flapper"/>
 
 <p class=" font-plus-jakarta-sans font-normal textresponsive text-legende text-center mb-4 mt-16  ">Galerie d’images</p>
 
+
+<div class="  grid lg:grid-cols-3 md:grid-cols-3 place-items-stretch place-self-center ">
+
+<div class=" p-5">
+  <img src="../../public/images/image_artiste1.webp" alt="image artiste">
+</div>
+
+<div class=" p-5">
+  <img src="../../public/images/image_artiste2.webp" alt="image artiste">
+</div>
+
+<div class=" p-5">
+    <img src="../../public/images/image_artiste3.webp" alt="image artiste">
+</div>
+
+
+</div>
+
+
+
+<footer>
+  <Footer/>
+</footer>
+
 </div>
 
 

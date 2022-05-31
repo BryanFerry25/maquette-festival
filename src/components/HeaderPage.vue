@@ -12,7 +12,7 @@
     </div>
     </RouterLink>
 <div class=" ml-auto mr-auto flex justify-center ">
-<RouterLink to="../views/AccueilView" class=" ml-auto mr-auto flex justify-center ">
+<RouterLink to="../views/" class=" ml-auto mr-auto flex justify-center ">
 
       <img class="w-2/5 md:w-2/5 lg:w-3/5 xl:w-4/5" src="../../public/images/logo.svg" alt="logo">
 
@@ -24,7 +24,7 @@
 
    
     <p class=" font-plus-jakarta-sans text-sm md:text-lg lg:text-2xl lg:p-5 xl:text-5xl">{{PageApres}}</p>
-     <img class="  w-5  " :src="image" alt=" fleche ou maison">
+     <img class="  w-5  " :src="ImageHeader" alt=" fleche ou maison">
     
     </div>
     </RouterLink>
@@ -56,7 +56,7 @@ export default {
       type: String,
       default:"festival"
     },
-    image:{
+    ImageHeader:{
       type: String,
       default:"../../public/images/Fleche.svg"
     },

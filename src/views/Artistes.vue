@@ -6,7 +6,7 @@
     LienAvant="/Festival"
     PageAvant="Programmation"
     PageApres="Le festival"
-    image="../../public/images/Fleche.svg"/>
+    ImageHeader="../../public/images/Fleche.svg"/>
 </header>
 <main>
 <TitrePage

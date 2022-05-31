@@ -1,11 +1,11 @@
 <template>
 <header class="mb-10">
 <HeaderPage
- LienSuivant="/"
-    LienAvant="/"
+ LienSuivant="/Festival"
+    LienAvant="/Artiste"
     PageAvant="Artistes"
     PageApres="Le festival"
-    image="/images/Fleche.svg"/>
+    ImageHeader="/images/Fleche.svg"/>
 </header>
 
 <main>

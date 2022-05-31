@@ -2,7 +2,7 @@
     <div class="flex items-center px-3 pt-2  ">
 
 
-
+<a :href="BackLien">
     <RouterLink :to="LienAvant">
     <div class="flex items-center gap-2   ">
 
@@ -11,6 +11,7 @@
     
     </div>
     </RouterLink>
+  </a>
 <div class=" ml-auto mr-auto flex justify-center ">
 <RouterLink to="../views/" class=" ml-auto mr-auto flex justify-center ">
 
@@ -59,6 +60,10 @@ export default {
     ImageHeader:{
       type: String,
       default:"../../public/images/Fleche.svg"
+    },
+    BackLien:{
+      type: String,
+      default:"javascript:history.back()"
     },
     
 

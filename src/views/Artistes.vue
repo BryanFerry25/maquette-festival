@@ -2,8 +2,8 @@
 
 <header class="mb-10">
 <HeaderPage
- LienSuivant="/"
-    LienAvant="/"
+ LienSuivant="/programmation"
+    LienAvant="/Festival"
     PageAvant="Programmation"
     PageApres="Le festival"
     image="../../public/images/Fleche.svg"/>

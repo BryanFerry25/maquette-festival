@@ -11,10 +11,12 @@
     
     </div>
     </RouterLink>
-
-
 <div class=" ml-auto mr-auto flex justify-center ">
+<RouterLink to="../views/AccueilView" class=" ml-auto mr-auto flex justify-center ">
+
       <img class="w-2/5 md:w-2/5 lg:w-3/5 xl:w-4/5" src="../../public/images/logo.svg" alt="logo">
+
+</RouterLink>
 </div>
 
     <RouterLink :to="LienSuivant">

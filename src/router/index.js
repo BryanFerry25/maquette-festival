@@ -9,6 +9,7 @@ import Contact from '../views/Contact.vue'
 import Concert from '../views/Concert.vue'
 import Artistes from '../views/Artistes.vue'
 import ArtistePage from '../views/ArtistePage.vue'
+import Page404 from '../views/Page404.vue'
 
 
 
@@ -26,6 +27,8 @@ const router = createRouter({
     { path: '/Concert', name: 'Concert', component: Concert },
     { path: '/Artistes', name: 'Artistes', component: Artistes },
     { path: '/ArtistePage', name: 'ArtistePage', component: ArtistePage },
+    { path: '/:pathMatch(.*)*', name: 'Page404', component: Page404 },
+
 
 
 

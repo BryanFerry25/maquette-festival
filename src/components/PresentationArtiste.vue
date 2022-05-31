@@ -1,6 +1,6 @@
 <template>
 
-<img class="w-2/5 xl:w-3/5 mx-auto my-auto mt-24" :src="image" alt="affiche artiste">
+<img class="w-2/5 xl:w-3/5 mx-auto my-auto mt-24" :src="ImageArtiste" alt="affiche artiste">
 
 
 
@@ -310,7 +310,7 @@ import Bouton from "./Bouton.vue"
 
 export default {
        props: {
-           image:{
+           ImageArtiste:{
                type:String,
                default:"../../public/images/artiste1.webp"
            },

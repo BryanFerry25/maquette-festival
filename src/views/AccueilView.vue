@@ -32,7 +32,7 @@
 <FlecheDown/>
 
 <PresentationAccueil 
-image="../../public/images/affiche_accueil1.webp"
+image="/images/affiche_accueil1.webp"
 TitrePartie="Découvrez tous nos concerts !"
 DescriptionPartie="Retrouvez la liste de tous nos concerts disponible cette année et plongez au coeur de celui qui vous correspond le mieux !"
 TextePartie1="Plus de 10 concerts"
@@ -45,7 +45,7 @@ url="/programmation"
 <FlecheDown/>
 
 <PresentationAccueil
-image="../../public/images/affiche_accueil2.webp"
+image="/images/affiche_accueil2.webp"
 TitrePartie="Rencontrez vos artistes préférés !"
 DescriptionPartie="Retrouvez la liste de tous nos artistes présents lors des concerts et choisissez le meilleur concert pour vous selon cette liste !"
 TextePartie1="Plus de 10 artistes dont "
@@ -57,7 +57,7 @@ url="/Artistes"
 <FlecheDown/>
 
 <PresentationAccueil
-image="../../public/images/affiche_accueil3.webp"
+image="/images/affiche_accueil3.webp"
 TitrePartie="À propos du festival"
 DescriptionPartie="Venez à l’encontre de notre festival et plongez au coeur d’une aventure paliptante et sensationnelle."
 TextePartie1="Plus de 15 000 visiteurs "

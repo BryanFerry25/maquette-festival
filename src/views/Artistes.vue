@@ -24,9 +24,11 @@ Artistes</h2>
 
 <FlecheDown/>
 
+
+<div class=" my-32">
 <TitreOnde
 Titre="Les DJ"/>
-
+</div>
 
 <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(285px,1fr))]">
 
@@ -79,9 +81,66 @@ textebouton="Anthony Diry"/>
 
 </div>
 
-
+<div class=" my-32">
 <TitreOnde
 Titre="Les producteurs"/>
+</div>
+
+
+<div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(285px,1fr))]">
+
+  <div class=" ml-7">
+<PresentationArtiste
+etoile1="#FBBF24"
+etoile2="#FBBF24"
+etoile3="#FBBF24"
+etoile4="#FFFFFF"
+etoile5="#FFFFFF"
+image="../../public/images/artiste5.webp"
+textebouton="Milano Kat"/>
+</div>
+
+
+<div class=" ml-7">
+<PresentationArtiste
+etoile1="#FBBF24"
+etoile2="#FBBF24"
+etoile3="#FBBF24"
+etoile4="#FBBF24"
+etoile5="#FFFFFF"
+image="../../public/images/artiste6.webp"
+textebouton="Baptiste Tablier"/>
+</div>
+
+<div class=" ml-7">
+<PresentationArtiste
+etoile1="#FBBF24"
+etoile2="#FBBF24"
+etoile3="#FBBF24"
+etoile4="#FBBF24"
+etoile5="#FBBF24"
+image="../../public/images/artiste7.webp"
+textebouton="Hugo Lobado"/>
+
+
+</div>
+
+<div class=" ml-7">
+<PresentationArtiste
+etoile1="#FBBF24"
+etoile2="#FFFFFF"
+etoile3="#FFFFFF"
+etoile4="#FFFFFF"
+etoile5="#FFFFFF"
+image="../../public/images/artiste8.webp"
+textebouton="Coumba Surez"/>
+</div>
+
+</div>
+
+<footer>
+  <Footer/>
+</footer>
 
 </div>
 

@@ -10,6 +10,8 @@
       @apply text-red-600 ;
     }
 
+
+
   }
 
   @layer base {
@@ -21,6 +23,6 @@
        
     }
     .textpadding{
-        @apply pr-10 pl-10 md:pr-20 md:pl-20 lg:pl-44 lg:pr-44 xl:pr-72 xl:pl-72
+        @apply pr-10 pl-10 md:pr-20 md:pl-20 lg:pl-44 lg:pr-44 xl:pr-72 xl:pl-72;
     }
   }

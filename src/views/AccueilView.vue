@@ -15,9 +15,11 @@
   <div class="-mb-10 ml-auto mr-auto ">
   <Bouton
   textebouton="Découvrir"
+  lien="/Festival"
   
   />
 </div>
+
 
 <img class="w-full h-full  xl:max-w-[400px] xl:max-h[400px] ml-auto  " src="../../public/images/bouton_accueil1.webp" alt=" dj">
 </div>
@@ -29,12 +31,15 @@
 
 <FlecheDown/>
 
-<PresentationAccueil
+<PresentationAccueil 
 image="../../public/images/affiche_accueil1.webp"
 TitrePartie="Découvrez tous nos concerts !"
 DescriptionPartie="Retrouvez la liste de tous nos concerts disponible cette année et plongez au coeur de celui qui vous correspond le mieux !"
 TextePartie1="Plus de 10 concerts"
 TextePartie2="disponibles cet été !"
+url="/programmation"
+
+
 
 />
 <FlecheDown/>
@@ -45,6 +50,7 @@ TitrePartie="Rencontrez vos artistes préférés !"
 DescriptionPartie="Retrouvez la liste de tous nos artistes présents lors des concerts et choisissez le meilleur concert pour vous selon cette liste !"
 TextePartie1="Plus de 10 artistes dont "
 TextePartie2="2 renommées meilleures DJ en France"
+url="/Artistes"
 
 />
 
@@ -56,6 +62,7 @@ TitrePartie="À propos du festival"
 DescriptionPartie="Venez à l’encontre de notre festival et plongez au coeur d’une aventure paliptante et sensationnelle."
 TextePartie1="Plus de 15 000 visiteurs "
 TextePartie2=" à chaque concerts !"
+url="/Festival"
 />
 
 <FlecheDown/>
@@ -70,6 +77,7 @@ TextePartie2=" à chaque concerts !"
 <div class="-mt-10 relative z-20 ">
   <Bouton
   textebouton="Nous contacter"
+  lien="/Contact"
   
   />
   </div>

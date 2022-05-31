@@ -5,12 +5,12 @@
     <img class="w-screen max-h-24" src="../../public/images/vague_footer.webp" alt="vague footer">
     <div class=" bg-red-900">
             <ul class=" font-plus-jakarta-sans textresponsive text-center mr-auto ml-auto space-y-10 text-white mb-16        grid lg:grid-cols-3 md:grid-cols-3 place-items-stretch place-self-center">
-                <li class=" mt-10">Programmation</li>
-                <li>Artistes</li>
-                <li>Le festival</li>
-                <li>Nous contacter</li>
-                <li>Accueil</li>
-                <li>Mentions légales</li>
+            <RouterLink to="../views/programmation">    <li class=" mt-10">Programmation</li> </RouterLink>
+                <RouterLink to="../views/Artistes"> <li>Artistes</li> </RouterLink>
+                <RouterLink to="../views/Festival"> <li>Le festival</li> </RouterLink>
+                <RouterLink to="../views/Contact"> <li>Nous contacter</li> </RouterLink>
+                 <RouterLink to="../views/AccueilView"><li>Accueil</li></RouterLink>
+                 <RouterLink to="../views/MentionsLegales"><li>Mentions légales</li></RouterLink>
             </ul>
 
             <div class=" flex space-x-8 justify-center pb-7 ">

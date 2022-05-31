@@ -13,9 +13,15 @@
 <div class="-mt-10 relative z-20 ">
   <Bouton
   textebouton="En savoir plus"
+  :lien="url"
+
+ 
+
   
   />
   </div>
+
+
 </div>
 </div>
 </template>
@@ -53,6 +59,13 @@ export default {
       default:"Deuxièmes parties du texte"
 
     },
+      url:{
+      type: String,
+      default:"/"
+
+    },
+
+
 
 },
 components: { Bouton } 

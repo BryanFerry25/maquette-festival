@@ -18,7 +18,7 @@ import ArtistePage from '../views/ArtistePage.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/', name: 'Accueil', component: AccueilView },
+    { path: '/', name: 'AccueilView', component: AccueilView },
     { path: '/programmation', name: 'Programmation', component: Programmation },
     { path: '/MentionsLegales', name: 'MentionsLegales', component: MentionsLegales },
     { path: '/Festival', name: 'Festival', component: Festival },

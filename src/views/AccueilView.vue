@@ -1,6 +1,6 @@
 <template>
 
-<Header/>
+<HeaderAccueil/>
 
 
 <main>
@@ -76,11 +76,7 @@ TextePartie2=" à chaque concerts !"
 </div>
 
 
-<footer>
-  <Footer/>
-</footer>
-
-
+<Footer/>
 </section>
 
 </main>
@@ -90,7 +86,7 @@ TextePartie2=" à chaque concerts !"
 
 <script>
 import { RouterLink, RouterView } from "vue-router";
-import Header from "../components/HeaderAccueil.vue"
+import HeaderAccueil from "../components/HeaderAccueil.vue"
 import Bouton from "../components/Bouton.vue"
 import FlecheDown from "../components/icons/FlecheDown.vue"
 import PresentationAccueil from "../components/PresentationAccueil.vue"
@@ -100,7 +96,7 @@ import Footer from "../components/Footer.vue"
 
 export default {
  
-  components: {Header, Bouton, FlecheDown, PresentationAccueil, Footer }
+  components: {HeaderAccueil, Bouton, FlecheDown, PresentationAccueil, Footer }
   
 
 };

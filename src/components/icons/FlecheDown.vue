@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col justify-center items-center relative mb-20 lg:mb-36 xl:mb-44">
+    <div class="flex flex-col justify-center items-center relative mb-20 lg:mb-36 xl:mb-44 motion-safe:animate-bounce">
   <svg
   class="md:w-[75px] lg:w-[85px] xl:w-[105px] md:h-[55px] lg:h-[65px] xl:h-[85px] flex-grow-0 flex-shrink-0"
     width="55"

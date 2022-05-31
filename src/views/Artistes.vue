@@ -1,15 +1,54 @@
 <template>
-    <p>Artistes</p>
+
+<header class="mb-10">
+<HeaderPage
+ LienSuivant="/"
+    LienAvant="/"
+    PageAvant="Programmation"
+    PageApres="Le festival"
+    image="../../public/images/Fleche.svg"/>
+</header>
+<main>
+<TitrePage
+Titre="Les Artistes"/>
+
+<img class="w-screen mt-12" src="../../public/images/artiste_intro.webp" alt="artiste image intro">
+<div class=" bg-fond-gris -mt-7 pt-20">
+
+
+<h2 class=" font-poppins font-semibold text-white text-center mt-7 text-10xl md:text-11xl lg:text-14xl xl:text-16xl textpadding mb-7 ">Nos différents 
+Artistes</h2>
+
+<p class=" font-plus-jakarta-sans font-normal textresponsive textpadding text-center text-legende mb-20">Vous pouvez retrouver ici tous les différents artistes qui seront présents pendant ces 2 prochaines années.</p>
+
+
+<FlecheDown/>
+
+<TitreOnde
+Titre="Les DJ"/>
+
+<PresentationArtiste/>
+
+</div>
+
+
+</main>
+
 </template>
 
 <script>
 import { RouterLink, RouterView } from "vue-router";
 import Footer from "../components/Footer.vue"
+import HeaderPage from "../components/HeaderPage.vue"
+import TitrePage from "../components/TitrePage.vue"
+import FlecheDown from "../components/icons/FlecheDown.vue"
+import TitreOnde from "../components/TitreOnde.vue"
+import PresentationArtiste from "../components/PresentationArtiste.vue"
 
 
 export default {
  
-  components: {Footer }
+  components: {Footer, HeaderPage,TitrePage,FlecheDown,TitreOnde,PresentationArtiste }
   
 
 };

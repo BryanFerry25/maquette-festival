@@ -39,7 +39,7 @@ etoile2="#FBBF24"
 etoile3="#FBBF24"
 etoile4="#FFFFFF"
 etoile5="#FFFFFF"
-ImageArtiste="../../public/images/artiste1.webp"
+ImageArtiste="/images/artiste1.webp"
 textebouton="Tony Flapper"/>
 </div>
 
@@ -51,7 +51,7 @@ etoile2="#FBBF24"
 etoile3="#FBBF24"
 etoile4="#FBBF24"
 etoile5="#FFFFFF"
-ImageArtiste="../../public/images/artiste2.webp"
+ImageArtiste="/images/artiste2.webp"
 textebouton="Dimitri Kil"/>
 </div>
 
@@ -62,7 +62,7 @@ etoile2="#FBBF24"
 etoile3="#FBBF24"
 etoile4="#FBBF24"
 etoile5="#FBBF24"
-ImageArtiste="../../public/images/artiste3.webp"
+ImageArtiste="/images/artiste3.webp"
 textebouton="Dasilva Fulo"/>
 
 
@@ -75,7 +75,7 @@ etoile2="#FBBF24"
 etoile3="#FBBF24"
 etoile4="#FFFFFF"
 etoile5="#FFFFFF"
-ImageArtiste="../../public/images/artiste4.webp"
+ImageArtiste="/images/artiste4.webp"
 textebouton="Anthony Diry"/>
 </div>
 
@@ -96,7 +96,7 @@ etoile2="#FBBF24"
 etoile3="#FBBF24"
 etoile4="#FFFFFF"
 etoile5="#FFFFFF"
-ImageArtiste="../../public/images/artiste5.webp"
+ImageArtiste="/images/artiste5.webp"
 textebouton="Milano Kat"/>
 </div>
 
@@ -108,7 +108,7 @@ etoile2="#FBBF24"
 etoile3="#FBBF24"
 etoile4="#FBBF24"
 etoile5="#FFFFFF"
-ImageArtiste="../../public/images/artiste6.webp"
+ImageArtiste="/images/artiste6.webp"
 textebouton="Baptiste Tablier"/>
 </div>
 
@@ -119,7 +119,7 @@ etoile2="#FBBF24"
 etoile3="#FBBF24"
 etoile4="#FBBF24"
 etoile5="#FBBF24"
-ImageArtiste="../../public/images/artiste7.webp"
+ImageArtiste="/images/artiste7.webp"
 textebouton="Hugo Lobado"/>
 
 
@@ -132,7 +132,7 @@ etoile2="#FFFFFF"
 etoile3="#FFFFFF"
 etoile4="#FFFFFF"
 etoile5="#FFFFFF"
-ImageArtiste="../../public/images/artiste8.webp"
+ImageArtiste="/images/artiste8.webp"
 textebouton="Coumba Surez"/>
 </div>
 

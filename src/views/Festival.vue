@@ -5,7 +5,7 @@
     LienAvant="/Festival"
     PageAvant="Programmation"
     PageApres="Les Artistes"
-    ImageHeader="../../public/images/Fleche.svg"/>
+    ImageHeader="/images/Fleche.svg"/>
  </header>
 
 <main>

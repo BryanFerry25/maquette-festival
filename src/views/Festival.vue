@@ -16,7 +16,7 @@ Titre="Le Festival"/>
 <div class=" bg-fond-gris -mt-7 pt-20">
 
 
-<h2 class=" font-poppins font-semibold text-white text-center mt-7 text-10xl md:text-11xl lg:text-14xl xl:text-16xl textpadding mb-7 ">Le festival</h2>
+<h2 class=" font-poppins font-semibold text-white text-center mt-7 text-10xl md:text-11xl lg:text-14xl xl:text-16xl textpadding mb-7 effet-shadowblanc ">Le festival</h2>
 
 <p class=" font-plus-jakarta-sans font-normal textresponsive textpadding text-center text-legende mb-20">Découvrez ici l’histoire de notre festival qui abrite maintenant des centaines de milliers de visiteurs par an !</p>
 

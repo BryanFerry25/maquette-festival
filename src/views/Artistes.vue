@@ -16,7 +16,7 @@ Titre="Les Artistes"/>
 <div class=" bg-fond-gris -mt-7 pt-20">
 
 
-<h2 class=" font-poppins font-semibold text-white text-center mt-7 text-10xl md:text-11xl lg:text-14xl xl:text-16xl textpadding mb-7 ">Nos différents 
+<h2 class=" font-poppins font-semibold text-white text-center mt-7 text-10xl md:text-11xl lg:text-14xl xl:text-16xl textpadding mb-7 effet-shadowblanc ">Nos différents 
 Artistes</h2>
 
 <p class=" font-plus-jakarta-sans font-normal textresponsive textpadding text-center text-legende mb-20">Vous pouvez retrouver ici tous les différents artistes qui seront présents pendant ces 2 prochaines années.</p>

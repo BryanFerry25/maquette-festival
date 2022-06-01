@@ -7,7 +7,7 @@
 <div class=" flex justify-center  ">
   <img class=" lg:w-60 lg:h-auto xl:w-72 xl:h-auto" src="../../public/images/logo.svg" alt=" logo">
 </div>
- <h2 class="  font-plus-jakarta-sans  font-semibold p-8 text-center textresponsive textpadding ">N’attendez plus et rejoignez-nous pour vivre un moment <span >palpitant </span> et <span>inoubliable</span>  </h2>
+ <h2 class="  font-plus-jakarta-sans  font-semibold p-8 text-center textresponsive textpadding  ">N’attendez plus et rejoignez-nous pour vivre un moment <span >palpitant </span> et <span>inoubliable</span>  </h2>
 
 <div class="flex items-center lg:gap-28 md:gap-14 sm:gap-7 xl:gap-60  ">
   <img class=" w-full h-full xl:max-w-[400px] xl:max-h[400px] mr-auto" src="../../public/images/bouton_accueil2.webp" alt=" dj">

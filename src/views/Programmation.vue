@@ -17,7 +17,7 @@ Titre="Programmation"/>
 <img class="w-screen mt-12" src="../../public/images/programmation_intro.webp" alt="programmation image intro">
 <div class=" bg-fond-gris -mt-7 pt-20">
 
-<h2 class=" font-poppins font-semibold text-white text-center mt-7 text-10xl md:text-11xl lg:text-14xl xl:text-16xl textpadding mb-7 ">Nos différents concerts</h2>
+<h2 class=" font-poppins font-semibold text-white text-center mt-7 text-10xl md:text-11xl lg:text-14xl xl:text-16xl textpadding mb-7 effet-shadowblanc ">Nos différents concerts</h2>
 
 <p class=" font-plus-jakarta-sans font-normal textresponsive textpadding text-center text-legende mb-14">Vous pouvez retrouver ici tout les différents concerts qui sont organisé pendant ces 2 prochaines années.</p>
 
@@ -32,6 +32,7 @@ Titre="Programmation"/>
 
 <Bouton 
 textebouton="Hard’style"
+lien="/Concert"
 />
 
 <p class=" font-plus-jakarta-sans font-normal textresponsive textpadding text-center text-legende mb-14 mt-5">Mai 2022 - 2 jours </p>

@@ -24,18 +24,54 @@
         </div>
 
 
-        <form action="https://google.com/" method="GET" class="flex flex-col bg-Default/me/Gris p-6 my-10   "
+        <form action="https://google.com/" method="GET" class="flex flex-col bg-Default/me/Gris p-10 my-10 bg-slate-300 rounded-2xl "
             x-data="{ q:'', }" 
             x-on:submit="q = q + ' site:inpulses.bferry.fr'">
-            <label for="q" class="text-center my-4 font-poppins text-2xl">Texte à chercher :</label>
-            <input type="text" class="border bg-white  shadow-contact h-24" placeholder="Rechercher " id="q" name="q" x-model="q">
+            
+            <input type="text" class="border bg-white  shadow-contact h-24 rounded-xl" placeholder="Rechercher " id="q" name="q" x-model="q">
             <button type="submit" class=" px-8 py-4 my-5 bg-red-600 text-white font-poppins rounded-3xl">Rechercher</button>
         </form>
 
+<h2 class=" font-poppins font-semibold  text-center mt-7 text-10xl md:text-11xl lg:text-14xl xl:text-16xl textpadding mb-7 effet-shadowblanc ">Retrouver les différentes pages</h2>
+<div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(285px,1fr))] p-8">
 
-<div>
+    <div>
+<RouterLink to="/programmation">
 
-    
+<button class="sm:w-full lg:w-auto my-2 border rounded-3xl md py-4 px-8 text-center bg-red-800 text-white hover:bg-red-00 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50 font-poppins">Programmation</button>
+
+</RouterLink>
+</div>
+
+    <div>
+<RouterLink to="/Artistes">
+
+<button class="sm:w-full lg:w-auto my-2 border rounded-3xl md py-4 px-8 text-center bg-red-800 text-white hover:bg-red-00 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50 font-poppins">Artistes</button>
+
+</RouterLink>
+</div>
+
+
+    <div>
+<RouterLink to="/Festival">
+
+<button class="sm:w-full lg:w-auto my-2 border rounded-3xl md py-4 px-8 text-center bg-red-800 text-white hover:bg-red-00 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50 font-poppins">Le festival</button>
+
+</RouterLink>
+</div>
+
+
+    <div>
+<RouterLink to="/Contact">
+
+<button class="sm:w-full lg:w-auto my-2 border rounded-3xl md py-4 px-8 text-center bg-red-800 text-white hover:bg-red-00 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50 font-poppins">Nous contacter</button>
+
+</RouterLink>
+</div>
+
+
+
+
 </div>
 
 </template>

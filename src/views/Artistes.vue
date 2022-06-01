@@ -32,6 +32,9 @@ Titre="Les DJ"/>
 
 <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(285px,1fr))]">
 
+
+
+
   <div class=" ml-7">
 <PresentationArtiste
 etoile1="#FBBF24"

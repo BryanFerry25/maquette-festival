@@ -1,8 +1,8 @@
 <template>
  <header class="mb-16">
    <HeaderPage
-    LienSuivant="/programmation"
-    LienAvant="/Festival"
+    LienSuivant="/Artistes"
+    LienAvant="/programmation"
     PageAvant="Programmation"
     PageApres="Les Artistes"
     ImageHeader="/images/Fleche.svg"/>

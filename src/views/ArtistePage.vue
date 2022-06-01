@@ -17,7 +17,7 @@
 Titre="Tony Flapper"/>
 
 <div class=" mt-14 mb-14">
-  <img class="w-3/5 md:w-2/5 lg:w-1/5 xl:w-1/5 mx-auto my-auto" src="../../public/images/artiste1.webp" alt="artiste">
+  <img class="w-2/5  mx-auto my-auto" src="../../public/images/artiste1.webp" alt="artiste">
 </div>
 
 <div>
@@ -198,7 +198,7 @@ Titre="Tony Flapper"/>
 <p class=" font-plus-jakarta-sans font-normal textresponsive text-legende text-center mb-4 mt-16  ">Galerie d’images</p>
 
 
-<div class="  grid lg:grid-cols-3 md:grid-cols-3 place-items-stretch place-self-center ">
+<div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(285px,1fr))] ">
 
 <div class=" p-5">
   <img src="../../public/images/image_artiste1.webp" alt="image artiste">

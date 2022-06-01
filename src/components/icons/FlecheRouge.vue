@@ -1,6 +1,6 @@
 <template>
 
-<div class=" flex justify-center">
+<div class=" flex justify-center mt-7 mb-7">
 <svg
 class="md:w-[70px] lg:w-[100px] xl:w-[110px] md:h-[170px] lg:h-[230px] xl:h-[250px]"
   width="50"

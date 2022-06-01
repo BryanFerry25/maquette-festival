@@ -31,3 +31,16 @@
     text-shadow:#fff 0px 0px 20px;
   }
 }
+:root {
+  --couleur-text: #ffffff;
+  --couleur-fond: #1C1917;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+      --couleur-text: rgb(0,0,0);
+      --couleur-fond: (#6f6a65);
+      
+  }
+}

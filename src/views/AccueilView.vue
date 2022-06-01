@@ -23,7 +23,7 @@
 
 <img class="w-full h-full  xl:max-w-[400px] xl:max-h[400px] ml-auto  " src="../../public/images/bouton_accueil1.webp" alt=" dj">
 </div>
-<section class=" bg-fond-gris -mt-3 ">
+<section class=" bg-fond-gris light:bg-fondlight  -mt-3 ">
 
 <div class=" pt-10 ">
   <img class="w-full max-h-auto" src="../../public/images/festival_accueil.webp" alt=" photo festival">

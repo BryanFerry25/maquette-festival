@@ -6,9 +6,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+
+        'light': { 'raw': '(prefers-color-scheme: light)' },
+
+      },
+
+    
       "colors": {
         "fond-gris": "#1C1917",
-        "legende": "#A3A3A3"
+        "legende": "#A3A3A3",
+        "txtlight":"var(--couleur-text)",
+        "fondlight":"var(--couleur-fond)"
       },
       "fontSize": {
         "3xs": "0.75rem",

@@ -8,7 +8,9 @@
                                 Oups.. Vous êtes au mauvais endroits !
                             </h1>
                             <p class="my-2 text-gray-800 font-poppins">Désolé cette page n'existe pas !</p>
+                            <RouterLink to="/">
                             <button class="sm:w-full lg:w-auto my-2 border rounded-3xl md py-4 px-8 text-center bg-red-600 text-white hover:bg-red-00 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50 font-poppins">Retourner à la page d'accueil</button>
+                            </RouterLink>
                         </div>
                     </div>
                     <div>
@@ -29,4 +31,11 @@
             <input type="text" class="border bg-white  shadow-contact h-24" placeholder="Rechercher " id="q" name="q" x-model="q">
             <button type="submit" class=" px-8 py-4 my-5 bg-red-600 text-white font-poppins rounded-3xl">Rechercher</button>
         </form>
+
+
+<div>
+
+    
+</div>
+
 </template>

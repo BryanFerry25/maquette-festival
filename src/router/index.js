@@ -13,6 +13,10 @@ import Page404 from '../views/Page404.vue'
 import styleguideView from '../views/styleguideView.vue'
 import TestBDD from '../views/TestBDD.vue'
 import LoginView from '../views/LoginView.vue'
+import CreateArtiste from '../views/Artiste/CreateArtiste.vue'
+import DeleteArtiste from '../views/Artiste/DeleteArtiste.vue'
+import GestionArtiste from '../views/Artiste/GestionArtiste.vue'
+import UpdateArtiste from '../views/Artiste/UpdateArtiste.vue'
 
 
 import { getAuth } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js'
@@ -41,6 +45,10 @@ const router = createRouter({
     { path: '/style-guide', name: 'styleguideView', component: styleguideView },
     { path: '/test', name: 'TestBDD', component: TestBDD },
     { path: '/Login', name: 'LoginView', component: LoginView },
+    { path: '/create', name: 'CreateArtiste', component: CreateArtiste },
+    { path: '/delete', name: 'DeleteArtiste', component: DeleteArtiste },
+    { path: '/update', name: 'UpdateArtiste', component: UpdateArtiste },
+    { path: '/gestion', name: 'GestionArtiste', component: GestionArtiste },
     { path: '/:pathMatch(.*)*', name: 'Page404', component: Page404 },
    
 

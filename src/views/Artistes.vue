@@ -36,15 +36,18 @@ Titre="Les DJ"/>
 
 
   <div class=" ml-7">
+    <div v-for="artistes in listart" :key=artistes.id>
 <PresentationArtiste
 etoile1="#FBBF24"
 etoile2="#FBBF24"
 etoile3="#FBBF24"
 etoile4="#FFFFFF"
 etoile5="#FFFFFF"
-ImageArtiste="/images/artiste1.webp"
-textebouton="Tony Flapper"
+:ImageArtiste="artistes.photo"
+:textebouton="artistes.nom"
+
 lien="/ArtistePage"/>
+</div>
 </div>
 
 
@@ -162,12 +165,63 @@ import FlecheDown from "../components/icons/FlecheDown.vue"
 import TitreOnde from "../components/TitreOnde.vue"
 import PresentationArtiste from "../components/PresentationArtiste.vue"
 
+import {
+    getFirestore,
+    collection,
+    doc,
+    query,
+    orderBy,
+    getDocs,
+    addDoc,
+    updateDoc,
+    deleteDoc,
+    onSnapshot } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js'
 
 
 export default {
- 
-  components: {Footer, HeaderPage,TitrePage,FlecheDown,TitreOnde,PresentationArtiste }
-  
+    
+    data(){
+      return{
+        listart:[],
 
+      }
+    },
+    mounted(){
+      this.getArtiste();
+    },
+    methods:{
+      async getArtiste(){
+        const firestore = getFirestore();
+          const dbArt = collection(firestore, "artistes");
+          const q = query(dbArt, orderBy('nom', 'asc'));
+          await onSnapshot(q, (snapshot) =>{
+              this.listart = snapshot.docs.map(doc =>({
+                  id:doc.id, ...doc.data()
+              }))
+          this.listart.forEach(function(photo){
+              const storage = getStorage();
+              const spaceRef = ref(storage, 'artistes/'+artistes.photo);
+              getDownloadURL(spaceRef)
+              .then((url) =>{
+                  artistes.photo = url;
+              })
+              .catch((error) =>{
+                  console.log('erreur download url', error);
+              })
+          })
+          })
+      }
+    },
+    computed:{
+      searchByDay(){
+        let query = this.query;
+          return this.listart.filter(function(art){
+              return art.jour.includes(query);
+        })    
+      }
+
+      
+    },
+  components: {Footer, HeaderPage,TitrePage,FlecheDown,TitreOnde,PresentationArtiste }
 };
 </script>

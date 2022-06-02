@@ -30,13 +30,15 @@ Titre="Programmation"/>
 
  <h2 class="  font-plus-jakarta-sans  p-8 text-center textresponsive textpadding  text-white"> Retrouver au cours de ses concerts un DJ de drum and bass qui enchaine les morceaux, utilisant des effets et mixant avec plusieurs platines. On peut comparer ce genre avec l’éléctro plus rythmé  </h2>
 
+
+<div v-for="drumbass in listdrum" :key=drumbass.id >
 <Bouton 
-textebouton="Hard’style"
-lien="/Concert"
+:textebouton="drumbass.titre"
+:lien="drumbass.url"
 />
 
-<p class=" font-plus-jakarta-sans font-normal textresponsive textpadding text-center text-legende mb-14 mt-5">Mai 2022 - 2 jours </p>
-
+<p class=" font-plus-jakarta-sans font-normal textresponsive textpadding text-center text-legende mb-14 mt-5"> {{ drumbass.txt }} </p>
+</div>
 
 <Bouton 
 textebouton="Funky town"
@@ -99,12 +101,58 @@ import TitreOnde from "../components/TitreOnde.vue"
 import Bouton from "../components/Bouton.vue"
 import TitrePage from "../components/TitrePage.vue"
 import FlecheDown from "../components/icons/FlecheDown.vue"
-
+import {
+    getFirestore,
+    collection,
+    doc,
+    query,
+    orderBy,
+    getDocs,
+    addDoc,
+    updateDoc,
+    deleteDoc,
+    onSnapshot } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js'
 
 
 export default {
- 
+       data(){
+        return{
+            listdrum:[],
+            
+            
+        }
+    },
+
+      mounted(){
+      this.getdrum();
+    },
+
+methods:{
+    async getdrum(){
+        // Obtenir Firestore
+        const firestore = getFirestore();
+        
+        // Base de données (collection) document concert
+        const dbdrum = collection(firestore, "drumbass");
+
+        // Obtenir tous les documents de la collection drum
+        // await pour attendre l'obtention des résultats
+        const query = await getDocs(dbdrum);
+        query.forEach((doc) => {
+            let drumbass = {
+                id : doc.id,
+                txt : doc.data().txt,
+                titre : doc.data().titre,
+                url : doc.data().url
+            }
+            this.listdrum.push(drumbass);
+        });
+    }
+},
+
+
   components: {Footer,HeaderPage,TitreOnde,Bouton,TitrePage,FlecheDown }
+
   
 
 };

@@ -1,8 +1,8 @@
 <template>
-<div class=" bg-fond-gris pt-10">
+<div class=" bg-neutral-700 pt-10 pb-96">
     <RouterLink to="./">
     <div class=" flex justify-center  ">
-  <img class=" w-16 lg:w-24 lg:h-auto xl:w-32 xl:h-auto " src="../../public/images/logo.svg" alt=" logo">
+  <img class=" w-16 lg:w-24 lg:h-auto xl:w-32 xl:h-auto mb-10  " src="../../public/images/logo.svg" alt=" logo">
 </div>
     </RouterLink>
     <div class=" px-5 grid grid-cols-1 lg:grid-cols-2 gap-20 relative ">
@@ -33,30 +33,23 @@
                     <input type="email" class="rounded-sm border-2 text-black" v-model="user.email">
                     <label class="text-white font-poppins textresponsive p-1">Mot de passe : </label>
                     <input type="password" class="rounded-sm border-2 text-black" v-model="user.password">
-                    <label class="text-white font-poppins textresponsive p-1">Répéter le mot de passe : </label>
+                    <label class="text-white font-poppins textresponsive p-1">Confirmer le mot de passe : </label>
                     <input class="rounded-sm border-2 text-black" type="password" v-model="password2"/>
                     <button class="bg-red-500 rounded-sm mt-5 text-white font-poppins textresponsive effet-shadowblanc p-3 " type="submit" >Créer</button>     
                 </fieldset>
             </form>
             
         </div>
-        <div>
-            <p>Exemple compte admin :</p>
-            <p class="pl-5">email : toto@gmail.com</p>
-            <p class="pl-5">mdp : CompteAdmin</p>
-            <p>Exemple compte classique :</p>
-            <p class="pl-5">email : toto@yahoo.com</p>
-            <p class="pl-5">mdp : Compte</p>
-        </div>
+
     </div>
      <ul v-if="isAdmin">
                 <li class="relative px-4 py-2 bg-slate-500 rounded-sm flex items-center text-white administration">
-                    administration <ChevronDownIcon class="ml-1 w-3 h-3"/>
+                    administration 
                     <ul class="absolute">
-                        <li><RouterLink to="/GestionTicket">gestion tickets</RouterLink></li>
-                        <li><RouterLink to="/GestionArtiste">gestion artistes</RouterLink></li>
-                        <li><RouterLink to="/GestionContact">gestion contacts</RouterLink></li>
-                        <li><RouterLink to="/GestionLatest">gestion latests</RouterLink></li>
+                        <li>gestion tickets</li>
+                        <li>gestion artistes</li>
+                        <li>gestion contacts</li>
+                        <li>gestion latests</li>
                     </ul>
                 </li>                
             </ul>

@@ -12,8 +12,17 @@ import ArtistePage from '../views/ArtistePage.vue'
 import Page404 from '../views/Page404.vue'
 import styleguideView from '../views/styleguideView.vue'
 import TestBDD from '../views/TestBDD.vue'
+import LoginView from '../views/LoginView.vue'
 
 
+import { getAuth } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js'
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  query,
+  where
+} from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js'
 
 
 
@@ -31,6 +40,7 @@ const router = createRouter({
     { path: '/ArtistePage', name: 'ArtistePage', component: ArtistePage },
     { path: '/style-guide', name: 'styleguideView', component: styleguideView },
     { path: '/test', name: 'TestBDD', component: TestBDD },
+    { path: '/Login', name: 'LoginView', component: LoginView },
     { path: '/:pathMatch(.*)*', name: 'Page404', component: Page404 },
    
 
@@ -41,5 +51,31 @@ const router = createRouter({
   ]
 })
 
+
+function guard(to, from, next) {
+  getAuth().onAuthStateChanged(function (user) {
+    if (user) {
+      console.log('router OK => user ', user);
+      const firestore = getFirestore();
+      const dbUsers = collection(firestore, "users");
+      const q = query(dbUsers, where("uid", "==", user.uid));
+      onSnapshot(q, (snapshot) => {
+        let userInfo = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        let isAdmin = userInfo[0].admin;
+        if (isAdmin) {
+          next(to.params.name);
+          return;
+        } else {
+          alert("Vous n'avez pas l'autorisation pour cette fonction");
+          next({ name: "HomeView" });
+          return;
+        }
+      })
+    } else {
+      console.log('router NOK => user ', user);
+      next({ name: "HomeView" });
+    }
+  });
+}
 
 export default router

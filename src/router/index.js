@@ -11,6 +11,7 @@ import Artistes from '../views/Artistes.vue'
 import ArtistePage from '../views/ArtistePage.vue'
 import Page404 from '../views/Page404.vue'
 import styleguideView from '../views/styleguideView.vue'
+import TestBDD from '../views/TestBDD.vue'
 
 
 
@@ -29,7 +30,9 @@ const router = createRouter({
     { path: '/Artistes', name: 'Artistes', component: Artistes },
     { path: '/ArtistePage', name: 'ArtistePage', component: ArtistePage },
     { path: '/style-guide', name: 'styleguideView', component: styleguideView },
+    { path: '/test', name: 'TestBDD', component: TestBDD },
     { path: '/:pathMatch(.*)*', name: 'Page404', component: Page404 },
+   
 
 
 

@@ -61,13 +61,13 @@ Titre="Hard’Style"/>
 </div>
 
 
-<footer>
-  <Footer/>
-</footer>
 
 </div>
 
 
+<footer>
+  <Footer/>
+</footer>
 </div>
 
 

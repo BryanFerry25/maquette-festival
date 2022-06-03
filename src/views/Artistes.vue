@@ -212,16 +212,7 @@ export default {
           })
       }
     },
-    computed:{
-      searchByDay(){
-        let query = this.query;
-          return this.listart.filter(function(art){
-              return art.jour.includes(query);
-        })    
-      }
-
-      
-    },
+   
   components: {Footer, HeaderPage,TitrePage,FlecheDown,TitreOnde,PresentationArtiste }
 };
 </script>

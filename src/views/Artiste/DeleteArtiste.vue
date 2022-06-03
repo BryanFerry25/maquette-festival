@@ -16,10 +16,7 @@
                     </div>
                     <div class="flex h-10 text-black rounded-sm overflow-hidden">
                         <div class="bg-true-gray-25 px-5 border-[1px] flex justify-center items-center">Date</div>
-                        <select class="w-full bg-white" id="date" v-model="artiste.jour" disabled>
-                        <option selected disabled>Sélectionner un Jour</option>
-                            <option v-for="date in listeDate" :key="date">{{date}}</option>
-                        </select>
+
                     </div>
                     <div class="flex h-64 text-black rounded-sm overflow-hidden">
                         <div class="bg-true-gray-25 px-5 border-[1px] flex justify-center items-center">Description</div>

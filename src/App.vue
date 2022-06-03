@@ -2,12 +2,22 @@
 
 
 
-
+      <ul v-if="isAdmin">
+                <li class=" text-center pt-16 relative px-16 py-28 bg-red-800 rounded-sm flex items-center justify-center text-white administration font-poppins textresponsive font-semibold">
+                  
+                    <ul class="absolute mt-7">
+                       <RouterLink to="/gestion"> <li class="mt-5">  Gestion Artiste  </li></RouterLink>
+                        <RouterLink to="/create">  <li class="mt-5">   Création Artistes </li></RouterLink>
+                         <RouterLink to="/update"> <li class="mt-5">   Mise à jour Artistes </li></RouterLink>
+                        <RouterLink to="/delete ">  <li class="mt-5">   Supprimer Artistes </li></RouterLink>
+                    </ul>
+                </li>                
+            </ul>
 
 
  <RouterView />
 
- 
+
 </template>
 <script>
 import router from "./router"

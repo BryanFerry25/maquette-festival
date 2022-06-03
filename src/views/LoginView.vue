@@ -42,19 +42,12 @@
         </div>
 
     </div>
-     <ul v-if="isAdmin">
-                <li class="relative px-4 py-2 bg-slate-500 rounded-sm flex items-center text-white administration">
-                    administration 
-                    <ul class="absolute">
-                        <li>gestion tickets</li>
-                        <li>gestion artistes</li>
-                        <li>gestion contacts</li>
-                        <li>gestion latests</li>
-                    </ul>
-                </li>                
-            </ul>
+     
+     
 
 </div>
+
+
 </template>
 
 <script>

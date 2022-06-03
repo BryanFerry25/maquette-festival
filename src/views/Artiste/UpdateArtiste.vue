@@ -27,8 +27,8 @@
             
             <div class="grid grid-cols-2 w-full place-items-center mt-14">
                
-                <button class="w-fit px-16 py-4 bg-red-700 text-white rounded-xl font-poppins" type="submit">Modifier</button>
-                <button class="w-fit px-16 py-4 bg-red-700 text-white rounded-xl font-poppins" type="button"><RouterLink to="/gestion">Annuler</RouterLink></button>
+                <button class="w-fit px-16 py-4 bg-red-700 text-white rounded-xl font-poppins hover:bg-red-600" type="submit">Modifier</button>
+                <button class="w-fit px-16 py-4 bg-red-700 text-white rounded-xl font-poppins hover:bg-red-600" type="button"><RouterLink to="/gestion">Annuler</RouterLink></button>
             </div>
         </form>
     </div>

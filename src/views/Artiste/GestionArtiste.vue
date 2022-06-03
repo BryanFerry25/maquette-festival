@@ -2,7 +2,7 @@
   <div class="mt-12 px-5 flex flex-col gap-20 relative">
       <div class="flex justify-between items-end">
         <h1 class="text-4xl underline font-poppins">Liste artiste</h1>
-        <RouterLink to="/create"> <div class=" bg-red-700 text-white font-poppins px-10 py-4 rounded-2xl"><p class="effet-shadowblanc">Créer +</p></div> </RouterLink>
+        <RouterLink to="/create"> <div class=" bg-red-700 text-white font-poppins px-10 py-4 rounded-2xl hover:bg-red-600"><p class="effet-shadowblanc">Créer +</p></div> </RouterLink>
       </div>
       <div class="block overflow-x-auto w-full">
          

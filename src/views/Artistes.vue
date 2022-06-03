@@ -35,7 +35,7 @@ Titre="Les DJ"/>
 
 
 
-  <div class=" ml-7">
+  <div class=" ml-7 rounded-full">
     <div v-for="artistes in listart" :key=artistes.id>
 <PresentationArtiste
 etoile1="#FBBF24"

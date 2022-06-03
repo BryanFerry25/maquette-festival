@@ -2,7 +2,7 @@
     <div class="mt-12 px-5 flex flex-col gap-20 relative">
         <div class="flex flex-col gap-8">
             <h1 class="text-4xl underline font-poppins">Delete Artiste</h1>
-            <p class="w-full text-center py-3 bg-yellow-50 text-black rounded-sm">Attention vous allez supprimer ce participant, cette action est irréversible !!</p>
+            <p class="w-full text-center py-3 bg-red-500 text-white font-poppins ">Êtes-vous sur de vouloir supprimer cet artiste  ?</p>
         </div>
         <form @submit.prevent="deleteArtiste">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -11,16 +11,16 @@
                 </div>
                 <div class="grid grid-cols-1 gap-14">
                     <div class="flex h-10 text-black rounded-sm overflow-hidden">
-                        <div class="bg-true-gray-25 px-5 border-[1px] flex justify-center items-center ">Nom</div>
-                        <input class="w-full" type="text" placeholder="Nom de l'artiste" v-model="artistes.nom" disabled>
+                        <div class="bg-true-gray-25 px-5 border-[1px] flex justify-center items-center bg-zinc-400 font-poppins ">Nom</div>
+                        <input class="w-full bg-gray-300 font-poppins" type="text" placeholder="Nom de l'artiste" v-model="artistes.nom" disabled>
                     </div>
 
 
                 </div>
             </div>
-            <div class="grid grid-cols-2 w-full place-items-center">
-                <button class="w-fit px-6 py-3" type="submit">Supprimer</button>
-                <button class="w-fit px-6 py-3" type="button"><RouterLink to="/gestion">Annuler</RouterLink></button>
+            <div class="grid grid-cols-2 w-full place-items-center mt-14">
+                <button class="w-fit px-16 py-4 bg-red-700 text-white rounded-xl font-poppins hover:bg-red-600" type="submit">Supprimer</button>
+                <button class="w-fit px-16 py-4 bg-red-700 text-white rounded-xl font-poppins hover:bg-red-600" type="button"><RouterLink to="/gestion">Annuler</RouterLink></button>
             </div>
         </form>
     </div>

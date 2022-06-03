@@ -1,7 +1,7 @@
 <template>
     <div class="mt-12 px-5 flex flex-col gap-20 relative">
         <div class="flex justify-between items-end">
-            <h1 class="font-smythe text-2xl">Update Artiste</h1>
+            <h1 class="font-smythe text-2xl">Modifier l'artiste</h1>
         </div>
         <form @submit.prevent="updateArtiste">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -11,16 +11,9 @@
                 <div class="grid grid-cols-1 gap-14">
                     <div class="flex h-10 text-black rounded-sm overflow-hidden">
                         <div class="bg-true-gray-25 px-5 border-[1px] flex justify-center items-center">Nom</div>
-                        <input class="w-full" type="text" placeholder="Nom de l'artiste" v-model="artiste.nom" required>
+                        <input class="w-full" type="text" placeholder="Nom de l'artiste" v-model="artistes.nom" required>
                     </div>
-                    <div class="flex h-10 text-black rounded-sm overflow-hidden">
-                        <div class="bg-true-gray-25 px-5 border-[1px] flex justify-center items-center">Date</div>
-                        <select class="w-full bg-white" id="date" v-model="artiste.jour" required>
-                        <option selected disabled>Sélectionner un Jour</option>
-                            <option v-for="date in listeDate" :key="date">{{date}}</option>
-                        </select>
-                        
-                    </div>
+
                     <div class="flex h-10 text-black rounded-sm overflow-hidden">
                         <div class="bg-true-gray-25 px-5 border-[1px] flex justify-center items-center">Photo</div>
                         <div class="relative w-full">
@@ -28,16 +21,13 @@
                             <label class="absolute w-full left-0 top-0 bottom-0 bg-white flex justify-center items-center" for="file">Sélectionner l'image</label>
                         </div>
                     </div>
-                    <div class="flex h-64 text-black rounded-sm overflow-hidden">
-                        <div class="bg-true-gray-25 px-5 border-[1px] flex justify-center items-center">Description</div>
-                        <textarea class="w-full h-full" type="text" placeholder="Description de l'artiste" v-model="artiste.desc" required></textarea>
-                    </div>
+
                 </div>
             </div>
             
             <div class="grid grid-cols-2 w-full place-items-center">
                 <button class="w-fit px-6 py-3" type="submit">Modifier</button>
-                <button class="w-fit px-6 py-3" type="button"><RouterLink to="/GestionArtiste">Annuler</RouterLink></button>
+                <button class="w-fit px-6 py-3" type="button"><RouterLink to="/gestion">Annuler</RouterLink></button>
             </div>
         </form>
     </div>
@@ -64,12 +54,10 @@ export default {
     data(){
         return{
             imageData:null, 
-            listeDate:["Thursday", "Friday", "Satursday", "Sunday"],     
-            artiste:{   
-                nom:null,   
-                desc:null,
-                jour:null,
-                img:null, 
+               
+            artistes:{   
+                nom:null,  
+                photo:null, 
             },
 
             refArtiste:null,     
@@ -83,7 +71,7 @@ export default {
     methods:{
         previewImage: function(event){
           this.file = this.$refs.file.files[0];
-          this.artiste.img = this.file.name;
+          this.artistes.photo = this.file.name;
           this.imgModifiee = true;
           var input = event.target;
           if(input.files && input.files[0]){
@@ -101,12 +89,12 @@ export default {
           this.refArtiste = await getDoc(docRef);
           if(this.refArtiste.exists()){
               this.artiste = this.refArtiste.data();
-              this.photoActuelle = this.artiste.img;
+              this.photoActuelle = this.artistes.photo;
           }else{
               this.console.log("artiste inexistant");
           }
           const storage = getStorage();
-          const spaceRef = ref(storage, 'artiste/'+this.artiste.img);
+          const spaceRef = ref(storage, 'artistes/'+this.artistes.photo);
           getDownloadURL(spaceRef)
             .then((url)=>{
                 this.imageData = url;
@@ -119,16 +107,16 @@ export default {
       async updateArtiste(){
           if(this.imgModifiee){
               const storage = getStorage();
-              let docRef = ref(storage, 'artiste/'+this.photoActuelle);
+              let docRef = ref(storage, 'artistes/'+this.photoActuelle);
               deleteObject(docRef);
-              docRef = ref(storage, 'artiste/'+this.artiste.img);
+              docRef = ref(storage, 'artistes/'+this.artistes.photo);
               await uploadString(docRef, this.imageData, 'data_url').then((snapshot) =>{
-                  console.log('Uploaded a base64 string', this.artiste.img);
+                  console.log('Uploaded a base64 string', this.artistes.photo);
               });
           }
           const firestore = getFirestore();
-          await updateDoc(doc(firestore, "artistes", this.$route.params.id), this.artiste);
-          this.$router.push('/GestionArtiste');
+          await updateDoc(doc(firestore, "artistes", this.$route.params.id), this.artistes);
+          this.$router.push('/gestion');
       }
     }
 

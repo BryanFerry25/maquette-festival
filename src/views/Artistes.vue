@@ -176,7 +176,13 @@ import {
     updateDoc,
     deleteDoc,
     onSnapshot } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js'
-
+    
+import { 
+    getStorage,             // Obtenir le Cloud Storage
+    ref,                    // Pour créer une référence à un fichier à uploader
+    getDownloadURL,         // Permet de récupérer l'adress complète d'un fichier du Storage
+    uploadString,           // Permet d'uploader sur le Cloud Storage une image en Base64
+} from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-storage.js'
 
 export default {
     
@@ -198,7 +204,7 @@ export default {
               this.listart = snapshot.docs.map(doc =>({
                   id:doc.id, ...doc.data()
               }))
-          this.listart.forEach(function(photo){
+          this.listart.forEach(function(artistes){
               const storage = getStorage();
               const spaceRef = ref(storage, 'artistes/'+artistes.photo);
               getDownloadURL(spaceRef)
@@ -209,6 +215,7 @@ export default {
                   console.log('erreur download url', error);
               })
           })
+          console.log("list",this.listart)
           })
       }
     },

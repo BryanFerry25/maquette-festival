@@ -1,7 +1,7 @@
 <template>
     <div class="mt-12 px-5 flex flex-col gap-20 relative">
         <div class="flex flex-col gap-8">
-            <h1 class="font-smythe text-2xl">Delete Artiste</h1>
+            <h1 class="text-4xl underline font-poppins">Delete Artiste</h1>
             <p class="w-full text-center py-3 bg-yellow-50 text-black rounded-sm">Attention vous allez supprimer ce participant, cette action est irréversible !!</p>
         </div>
         <form @submit.prevent="deleteArtiste">
@@ -48,11 +48,9 @@ import {
 export default {
     data(){
         return{
-            listeDate:["Thursday", "Friday", "Satursday", "Sunday"],     
-            artiste:{   
+                
+            artistes:{   
                 nom:null,   
-                desc:null,
-                jour:null,
                 img:null, 
             },
 
@@ -70,13 +68,13 @@ export default {
           const docRef = doc(firestore, "artistes", id);
           this.refArtiste = await getDoc(docRef);
           if(this.refArtiste.exists()){
-              this.artiste = this.refArtiste.data();
-              this.photoActuelle = this.artiste.img;
+              this.artistes = this.refArtiste.data();
+              this.photoActuelle = this.artistes.photo;
           }else{
               this.console.log("artiste inexistant");
           }
           const storage = getStorage();
-          const spaceRef = ref(storage, 'artiste/'+this.artiste.img);
+          const spaceRef = ref(storage, 'artiste/'+this.artistes.photo);
           getDownloadURL(spaceRef)
             .then((url)=>{
                 this.photoActuelle = url;
@@ -90,7 +88,7 @@ export default {
             const firestore = getFirestore();
             await deleteDoc(doc(firestore, "artistes", this.$route.params.id));
             const storage = getStorage();
-            let docRef = ref(storage, 'artiste/'+this.artiste.img);
+            let docRef = ref(storage, 'artiste/'+this.artistes.photo);
             deleteObject(docRef);
             this.$router.push('/GestionArtiste');       
         }

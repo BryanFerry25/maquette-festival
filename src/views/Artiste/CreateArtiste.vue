@@ -1,7 +1,7 @@
 <template>
     <div class="mt-12 px-5 flex flex-col gap-20 relative">
         <div class="flex justify-between items-end">
-            <h1 class="font-smythe text-4xl underline font-poppins ">Ajouter Artiste</h1>
+            <h1 class=" text-4xl underline font-poppins ">Ajouter Artiste</h1>
         </div>
         <form @submit.prevent="createArtiste">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">

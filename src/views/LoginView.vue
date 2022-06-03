@@ -41,9 +41,15 @@
             
         </div>
 
+
+
+    <h1 class=" font-poppins text-white mx-auto my-auto text-6xl underline ">Voici le compte admin avec le mot de passe :</h1>
+    <p class=" font-poppins text-white mx-auto my-auto ">Email : bonjour@gmail.com</p>
+    <p class=" font-poppins text-white mx-auto my-auto ">Mot de passe : 123456</p>
+    <p></p>
     </div>
      
-     
+
 
 </div>
 

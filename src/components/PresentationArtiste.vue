@@ -1,6 +1,6 @@
 <template>
 
-<img class="w-2/5 xl:w-3/5 mx-auto my-auto mt-24" :src="ImageArtiste" alt="affiche artiste">
+<img class="w-2/5 xl:w-3/5 mx-auto my-auto mt-24 max-h-[400px] max-w-[400px]" :src="ImageArtiste" alt="affiche artiste">
 
 
 

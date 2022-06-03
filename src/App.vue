@@ -48,9 +48,9 @@ export default {
                 email:null,
                 password:null
             },
-            userInfo:null,
+            
             name:"Account",
-            avatar:null,
+            
             isAdmin:false
         }
     },

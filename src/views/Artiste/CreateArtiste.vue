@@ -55,7 +55,8 @@ export default {
         return{
             imageData:null, 
             
-            artistes:{   
+            artistes:{  
+                 
                 nom:null,   
                 photo:null, 
             },
@@ -86,6 +87,7 @@ export default {
               console.log('Uploaded a base64 string');
               const db = getFirestore();
               const docRef = addDoc(collection(db, 'artistes'), this.artistes );
+              
           });
           this.$router.push('/gestion');
           this.$router.push('../Artistes');

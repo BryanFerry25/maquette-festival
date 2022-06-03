@@ -11,7 +11,7 @@ import Artistes from '../views/Artistes.vue'
 import ArtistePage from '../views/ArtistePage.vue'
 import Page404 from '../views/Page404.vue'
 import styleguideView from '../views/styleguideView.vue'
-import TestBDD from '../views/TestBDD.vue'
+
 import LoginView from '../views/LoginView.vue'
 import CreateArtiste from '../views/Artiste/CreateArtiste.vue'
 import DeleteArtiste from '../views/Artiste/DeleteArtiste.vue'
@@ -43,11 +43,11 @@ const router = createRouter({
     { path: '/Artistes', name: 'Artistes', component: Artistes },
     { path: '/ArtistePage', name: 'ArtistePage', component: ArtistePage },
     { path: '/style-guide', name: 'styleguideView', component: styleguideView },
-    { path: '/test', name: 'TestBDD', component: TestBDD },
+  
     { path: '/Login', name: 'LoginView', component: LoginView },
     { path: '/create', name: 'CreateArtiste', component: CreateArtiste },
-    { path: '/delete', name: 'DeleteArtiste', component: DeleteArtiste },
-    { path: '/update', name: 'UpdateArtiste', component: UpdateArtiste },
+    { path: '/delete/:id', name: 'DeleteArtiste', component: DeleteArtiste },
+    { path: '/update/:id', name: 'UpdateArtiste', component: UpdateArtiste },
     { path: '/gestion', name: 'GestionArtiste', component: GestionArtiste },
     { path: '/:pathMatch(.*)*', name: 'Page404', component: Page404 },
    

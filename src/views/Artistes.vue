@@ -176,7 +176,7 @@ import {
     updateDoc,
     deleteDoc,
     onSnapshot } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js'
-    
+
 import { 
     getStorage,             // Obtenir le Cloud Storage
     ref,                    // Pour créer une référence à un fichier à uploader
@@ -215,7 +215,7 @@ export default {
                   console.log('erreur download url', error);
               })
           })
-          console.log("list",this.listart)
+          
           })
       }
     },

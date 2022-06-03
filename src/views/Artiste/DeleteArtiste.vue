@@ -12,21 +12,15 @@
                 <div class="grid grid-cols-1 gap-14">
                     <div class="flex h-10 text-black rounded-sm overflow-hidden">
                         <div class="bg-true-gray-25 px-5 border-[1px] flex justify-center items-center">Nom</div>
-                        <input class="w-full" type="text" placeholder="Nom de l'artiste" v-model="artiste.nom" disabled>
+                        <input class="w-full" type="text" placeholder="Nom de l'artiste" v-model="artistes.nom" disabled>
                     </div>
-                    <div class="flex h-10 text-black rounded-sm overflow-hidden">
-                        <div class="bg-true-gray-25 px-5 border-[1px] flex justify-center items-center">Date</div>
 
-                    </div>
-                    <div class="flex h-64 text-black rounded-sm overflow-hidden">
-                        <div class="bg-true-gray-25 px-5 border-[1px] flex justify-center items-center">Description</div>
-                        <textarea class="w-full h-full" type="text" placeholder="Description de l'artiste" v-model="artiste.desc" disabled></textarea>
-                    </div>
+
                 </div>
             </div>
             <div class="grid grid-cols-2 w-full place-items-center">
                 <button class="w-fit px-6 py-3" type="submit">Supprimer</button>
-                <button class="w-fit px-6 py-3" type="button"><RouterLink to="/GestionArtiste">Annuler</RouterLink></button>
+                <button class="w-fit px-6 py-3" type="button"><RouterLink to="/gestion">Annuler</RouterLink></button>
             </div>
         </form>
     </div>
@@ -51,7 +45,7 @@ export default {
                 
             artistes:{   
                 nom:null,   
-                img:null, 
+                photo:null, 
             },
 
             refArtiste:null,      
@@ -74,7 +68,7 @@ export default {
               this.console.log("artiste inexistant");
           }
           const storage = getStorage();
-          const spaceRef = ref(storage, 'artiste/'+this.artistes.photo);
+          const spaceRef = ref(storage, 'artistes/'+this.artistes.photo);
           getDownloadURL(spaceRef)
             .then((url)=>{
                 this.photoActuelle = url;
@@ -88,9 +82,9 @@ export default {
             const firestore = getFirestore();
             await deleteDoc(doc(firestore, "artistes", this.$route.params.id));
             const storage = getStorage();
-            let docRef = ref(storage, 'artiste/'+this.artistes.photo);
+            let docRef = ref(storage, 'artistes/'+this.artistes.photo);
             deleteObject(docRef);
-            this.$router.push('/GestionArtiste');       
+            this.$router.push('/gestion');       
         }
     }
 

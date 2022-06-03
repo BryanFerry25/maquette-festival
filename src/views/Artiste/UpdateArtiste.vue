@@ -26,6 +26,7 @@
             </div>
             
             <div class="grid grid-cols-2 w-full place-items-center">
+               
                 <button class="w-fit px-6 py-3" type="submit">Modifier</button>
                 <button class="w-fit px-6 py-3" type="button"><RouterLink to="/gestion">Annuler</RouterLink></button>
             </div>
@@ -88,7 +89,7 @@ export default {
           const docRef = doc(firestore, "artistes", id);
           this.refArtiste = await getDoc(docRef);
           if(this.refArtiste.exists()){
-              this.artiste = this.refArtiste.data();
+              this.artistes = this.refArtiste.data();
               this.photoActuelle = this.artistes.photo;
           }else{
               this.console.log("artiste inexistant");

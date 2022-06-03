@@ -11,7 +11,7 @@
                 </div>
                 <div class="grid grid-cols-1 gap-14">
                     <div class="flex h-10 text-black rounded-sm overflow-hidden">
-                        <div class="bg-true-gray-25 px-5 border-[1px] flex justify-center items-center">Nom</div>
+                        <div class="bg-true-gray-25 px-5 border-[1px] flex justify-center items-center ">Nom</div>
                         <input class="w-full" type="text" placeholder="Nom de l'artiste" v-model="artistes.nom" disabled>
                     </div>
 

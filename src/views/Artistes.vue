@@ -51,41 +51,6 @@ lien="/ArtistePage"/>
 </div>
 
 
-<div class=" ml-7">
-<PresentationArtiste
-etoile1="#FBBF24"
-etoile2="#FBBF24"
-etoile3="#FBBF24"
-etoile4="#FBBF24"
-etoile5="#FFFFFF"
-ImageArtiste="/images/artiste2.webp"
-textebouton="Dimitri Kil"/>
-</div>
-
-<div class=" ml-7">
-<PresentationArtiste
-etoile1="#FBBF24"
-etoile2="#FBBF24"
-etoile3="#FBBF24"
-etoile4="#FBBF24"
-etoile5="#FBBF24"
-ImageArtiste="/images/artiste3.webp"
-textebouton="Dasilva Fulo"/>
-
-
-</div>
-
-<div class=" ml-7">
-<PresentationArtiste
-etoile1="#FBBF24"
-etoile2="#FBBF24"
-etoile3="#FBBF24"
-etoile4="#FFFFFF"
-etoile5="#FFFFFF"
-ImageArtiste="/images/artiste4.webp"
-textebouton="Anthony Diry"/>
-</div>
-
 </div>
 
 <div class=" my-32">

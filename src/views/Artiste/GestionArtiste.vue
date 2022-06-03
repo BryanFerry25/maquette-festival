@@ -2,7 +2,7 @@
   <div class="mt-12 px-5 flex flex-col gap-20 relative">
       <div class="flex justify-between items-end">
         <h1 class="text-4xl underline font-poppins">Liste artiste</h1>
-        <RouterLink to="/create"> <div class=" bg-red-700 text-white font-poppins px-10 py-4 rounded-2xl"><p>Créer +</p></div> </RouterLink>
+        <RouterLink to="/create"> <div class=" bg-red-700 text-white font-poppins px-10 py-4 rounded-2xl"><p class="effet-shadowblanc">Créer +</p></div> </RouterLink>
       </div>
       <div class="block overflow-x-auto w-full">
          
@@ -31,7 +31,7 @@
 
 
                         <RouterLink :to="{ name:'DeleteArtiste', params: { id: artistes.id }}">
-                         <div class=" p-7 bg-red-900 text-white font-poppins px-4 py-3 rounded-2xl mb-8 ">
+                         <div class=" p-7 bg-red-900 text-white font-poppins px-4 py-3 rounded-2xl mb-8 effet-shadowblanc ">
                     Supprimer
                         </div>
                         </RouterLink>
@@ -39,7 +39,7 @@
 
 
                     <RouterLink :to="{ name:'UpdateArtiste', params: { id: artistes.id }}">
-                        <div class="bg-red-600 text-white font-poppins px-4 py-3 rounded-2xl">
+                        <div class="bg-red-600 text-white font-poppins px-4 py-3 rounded-2xl effet-shadowblanc">
                     Modifier
 
 
